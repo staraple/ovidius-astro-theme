@@ -5,6 +5,7 @@ publishDate: 'Sept 18 2023'
 featureImage:
   src: '/post-6.webp'
   alt: Circles
+isDraft: true
 seo:
   image:
     src: '/post-6.jpg'

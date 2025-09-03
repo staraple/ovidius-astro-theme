@@ -5,6 +5,7 @@ publishDate: 'Jan 10 2024'
 featureImage:
   src: '/post-8.webp'
   alt: Golden and blue geometrical shapes
+isDraft: true
 seo:
   image:
     src: '/post-8.jpg'

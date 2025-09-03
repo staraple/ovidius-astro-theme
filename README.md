@@ -1,14 +1,4 @@
-# Ovidius - Astro & Tailwind CSS Theme by justgoodui.com
-
-Ovidius is a single-author blog theme for Astro.js. Featuring a minimal, slick, responsive and content-focused design. For more Astro.js themes please check [justgoodui.com](https://justgoodui.com/).
-
-![Ovidius Astro.js Theme](public/ovidius-preview.jpg)
-
-[![Deploy to Netlify Button](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/JustGoodUI/ovidius-astro-theme)
-
-If you click this☝️ button, it will create a new repo for you that looks exactly like this one, and sets that repo up immediately for deployment on Netlify.
-
-## Theme Features:
+## Theme Features
 
 - ✅ Featured post support
 - ✅ Subscribe form
@@ -20,10 +10,10 @@ If you click this☝️ button, it will create a new repo for you that looks exa
 
 ## Template Integrations
 
-- @astrojs/tailwind - https://docs.astro.build/en/guides/integrations-guide/tailwind/
-- @astrojs/sitemap - https://docs.astro.build/en/guides/integrations-guide/sitemap/
-- @astrojs/mdx - https://docs.astro.build/en/guides/markdown-content/
-- @astrojs/rss - https://docs.astro.build/en/guides/rss/
+- @astrojs/tailwind - <https://docs.astro.build/en/guides/integrations-guide/tailwind/>
+- @astrojs/sitemap - <https://docs.astro.build/en/guides/integrations-guide/sitemap/>
+- @astrojs/mdx - <https://docs.astro.build/en/guides/markdown-content/>
+- @astrojs/rss - <https://docs.astro.build/en/guides/rss/>
 
 ## 🚀 Project Structure
 
@@ -78,7 +68,7 @@ Check out [our documentation](https://docs.astro.build) or jump into our [Discor
 
 ## Astro Themes by Just Good UI
 
-- [Dante](https://github.com/JustGoodUI/dante-astro-theme) is a free single-author blog and portfolio theme. 
+- [Dante](https://github.com/JustGoodUI/dante-astro-theme) is a free single-author blog and portfolio theme.
 
 ## License
 

@@ -1,15 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
-import NoHeaderLayout from '../layouts/NoHeaderLayout.astro';
+import FeaturedPostPreview from '../components/FeaturedPostPreview.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
-import FeaturedPostPreview from '../components/FeaturedPostPreview.astro';
 import PostPreview from '../components/PostPreview.astro';
 import siteConfig from '../data/site-config';
-import { sortPostsByDateDesc } from '../utils/post-utils';
-import Subscribe from '../components/Subscribe.astro';
+import NoHeaderLayout from '../layouts/NoHeaderLayout.astro';
+import { filterOutDrafts, sortPostsByDateDesc } from '../utils/post-utils';
 
-const posts = (await getCollection('blog')).sort(sortPostsByDateDesc);
+const posts = (await getCollection('blog')).sort(sortPostsByDateDesc).filter(filterOutDrafts);
 const featuredPosts = posts.filter(({ data }) => data.isFeatured);
 const latestPosts = posts.filter(({ data }) => !data.isFeatured).slice(0, 3);
 ---
@@ -36,7 +35,7 @@ const latestPosts = posts.filter(({ data }) => !data.isFeatured).slice(0, 3);
                 <div class="px-4 mb-12 sm:px-8 sm:mb-16">
                     <div class="max-w-3xl mx-auto mb-8 sm:mb-12">
                         <h2 class="text-sm uppercase tracking-wider text-slate-900 after:content-[''] after:block after:w-16 after:h-px after:bg-primary after:mt-4">
-                            Latest Articles
+                            最新文章
                         </h2>
                     </div>
                     <div class="max-w-3xl mx-auto xl:max-w-6xl">
@@ -47,14 +46,14 @@ const latestPosts = posts.filter(({ data }) => !data.isFeatured).slice(0, 3);
                     <div class="max-w-3xl mx-auto pt-8 border-t border-slate-200 sm:pt-12">
                         <a
                             class="px-8 py-2.5 inline-flex gap-1.5 justify-center items-center font-semibold bg-primary text-white rounded-full transition duration-300 hover:shadow-button"
-                            href="/blog"
+                            href="/posts"
                         >
-                            View All Posts
+                            查看所有文章
                         </a>
                     </div>
                 </div>
             )
         }
-        <Subscribe class="px-4 my-12 sm:px-8 sm:my-16" />
+        <!--<Subscribe class="px-4 my-12 sm:px-8 sm:my-16" />-->
     </main>
 </NoHeaderLayout>

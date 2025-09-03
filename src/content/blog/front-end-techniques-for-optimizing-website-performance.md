@@ -5,6 +5,7 @@ publishDate: 'Aug 10 2023'
 featureImage:
   src: '/post-4.webp'
   alt: Blue stripes
+isDraft: true
 seo:
   image:
     src: '/post-4.jpg'

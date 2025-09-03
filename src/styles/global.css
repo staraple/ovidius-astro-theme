@@ -15,17 +15,15 @@
     .prose a {
         @apply text-primary underline decoration-1 underline-offset-2 hover:no-underline;
     }
-    .prose blockquote {
-        @apply relative font-semibold not-italic border-none pl-0 text-[1.375em] leading-snug text-center sm:text-[1.66667em] lg:-mx-24 xl:-mx-40;
+
+    /* 行内代码样式 */
+    .prose code:not(pre code) {
+        @apply px-1.5 py-0.5 bg-gray-100 rounded font-mono;
     }
-    .prose blockquote:before {
-        @apply block w-15 h-0.75 mx-auto bg-primary;
-        content: '';
-        margin-bottom: 1.375em;
-    }
-    .prose blockquote:after {
-        @apply block w-7.5 h-0.75 mx-auto bg-primary;
-        content: '';
-        margin-top: 1.375em;
+
+    /* 覆盖默认的反引号显示 */
+    .prose :where(code):not(:where([class~='not-prose'], [class~='not-prose'] *))::before,
+    .prose :where(code):not(:where([class~='not-prose'], [class~='not-prose'] *))::after {
+        content: none;
     }
 }

@@ -41,38 +41,30 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
     logo: {
         src: '/logo.svg',
-        alt: 'Ovidius logo'
+        alt: 'Staraple logo'
     },
-    title: 'Ovidius',
-    description: 'Astro.js and Tailwind CSS theme for blogging by justgoodui.com',
-    image: {
-        src: '/ovidius-preview.jpg',
-        alt: 'Ovidius - Astro.js and Tailwind CSS theme'
-    },
+    title: 'Staraple',
+    description: "Star's personal blog.",
     primaryNavLinks: [
         {
-            text: 'Home',
+            text: '首页',
             href: '/'
         },
         {
-            text: 'Blog',
-            href: '/blog'
+            text: '文章',
+            href: '/posts'
         },
-        {
-            text: 'About',
+        /*{
+            text: '关于',
             href: '/about'
-        },
+        },*/
         {
-            text: 'Contact',
+            text: '联系我',
             href: '/contact'
-        },
-        {
-            text: 'Download Theme',
-            href: 'https://github.com/JustGoodUI/ovidius-astro-theme'
         }
     ],
     secondaryNavLinks: [
-        {
+        /*{
             text: 'About',
             href: '/about'
         },
@@ -87,10 +79,10 @@ const siteConfig: SiteConfig = {
         {
             text: 'Download Theme',
             href: 'https://github.com/JustGoodUI/ovidius-astro-theme'
-        }
+        }*/
     ],
     socialLinks: [
-        {
+        /*{
             text: 'Go to GitHub repo',
             href: 'https://github.com/JustGoodUI/ovidius-astro-theme',
             icon: 'github'
@@ -104,14 +96,14 @@ const siteConfig: SiteConfig = {
             text: 'Follow on Bluesky',
             href: 'https://bsky.app/profile/justgoodui.com',
             icon: 'bluesky'
-        }
+        }*/
     ],
     hero: {
-        title: 'Hi there!',
-        text: "My name is Justin Case. I'm a freelance front-end developer, author and speaker based in Austin, TX. It's nice to meet you.",
+        title: '你 好~',
+        text: '我是一名前端工程师，现居上海',
         avatar: {
             src: '/avatar.jpg',
-            alt: 'Justin Case'
+            alt: 'Staraple avatar'
         },
         backgroundImage: {
             src: '/hero.webp'

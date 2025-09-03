@@ -1,15 +1,14 @@
 ---
 import type { GetStaticPathsOptions, Page } from 'astro';
 import { type CollectionEntry, getCollection } from 'astro:content';
-import BaseLayout from '../../layouts/BaseLayout.astro';
 import Icon from '../../components/Icon.astro';
 import PostPreview from '../../components/PostPreview.astro';
 import siteConfig from '../../data/site-config.ts';
-import { sortPostsByDateDesc } from '../../utils/post-utils';
-import Subscribe from '../../components/Subscribe.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { filterOutDrafts, sortPostsByDateDesc } from '../../utils/post-utils';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-    const posts = (await getCollection('blog')).sort(sortPostsByDateDesc);
+    const posts = (await getCollection('blog')).sort(sortPostsByDateDesc).filter(filterOutDrafts);
     return paginate(posts, { pageSize: siteConfig.postsPerPage || 5 });
 }
 
@@ -52,6 +51,6 @@ const blog = page.data;
                 }
             </div>
         </nav>
-        <Subscribe class="my-12 sm:my-16" />
+        <!-- <Subscribe class="my-12 sm:my-16" /> -->
     </main>
 </BaseLayout>

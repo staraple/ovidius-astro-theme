@@ -7,9 +7,12 @@
         "start": "astro dev",
         "build": "astro build",
         "preview": "astro preview",
-        "astro": "astro"
+        "astro": "astro",
+        "preview2": "wrangler pages dev dist",
+        "deploy": "npx wrangler deploy"
     },
     "dependencies": {
+        "@astrojs/cloudflare": "^12.6.7",
         "@astrojs/mdx": "^4.2.3",
         "@astrojs/rss": "^4.0.11",
         "@astrojs/sitemap": "^3.3.0",

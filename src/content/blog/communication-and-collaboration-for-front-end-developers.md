@@ -5,6 +5,7 @@ publishDate: 'Jul 23 2023'
 featureImage:
   src: '/post-2.webp'
   alt: Sun and sea waves
+isDraft: true
 seo:
   image:
     src: '/post-2.jpg'
