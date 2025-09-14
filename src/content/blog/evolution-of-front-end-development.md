@@ -3,12 +3,12 @@ title: '前端开发的演变：技术变革与 AI 时代的思考'
 excerpt: 前端开发的演变历程展现出清晰的技术逻辑：从简单到复杂，从静态到动态，从单一功能到系统应用。每一次技术变革都围绕着 "提升用户体验" 与 "提高开发效率" 这两个核心目标。
 publishDate: 'Jul 15 2025'
 featureImage:
-  src: '/post-9.webp'
+  src: '/post-12.webp'
   alt: Blue shapes
 isFeatured: true
 seo:
   image:
-    src: '/post-9.jpg'
+    src: '/post-12.jpg'
 ---
 
 前端开发历经数十年发展，从简单的静态页面到复杂的交互应用，每一次技术跃迁都推动着开发模式的革新。本文将系统梳理前端发展的关键阶段，剖析技术演进的内在逻辑，并深入探讨 AI 大模型时代给前端领域带来的深层变革。

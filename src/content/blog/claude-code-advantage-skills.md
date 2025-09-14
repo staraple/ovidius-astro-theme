@@ -3,12 +3,12 @@ title: Claude Code：高级技巧指南
 excerpt: 本文梳理 16 项经过验证的高阶技巧，涵盖指令控制、MCP 插件、Hook 自动化、Subagent 构建等核心能力，结合官方文档与社区最佳实践，助你充分发挥 Claude Code 的潜力，在 AI 时代掌握前端开发的主动权。
 publishDate: 'Sep 1 2025'
 featureImage:
-  src: '/post-3.webp'
+  src: '/post-16.webp'
   alt: Flat screen computer monitor on wooden desk
   caption: My working space
 seo:
   image:
-    src: '/post-3.jpg'
+    src: '/post-16.jpg'
 ---
 
 **Claude Code 正在成为越来越多开发者的首选工具**。开发者们早已不再满足于简单的“问答式”交互，他们正在对 Claude Code 进行**深度定制与系统化集成**——从配置专属命令、构建安全权限体系，到创建专业化 Subagent 团队、打通本地 IDE 与 GitHub 工作流。通过这些高阶能力，开发者将 Claude Code 从一个“智能补全工具”转变为一个**可编程的开发中枢**，真正实现人机协同的工业化开发模式。
