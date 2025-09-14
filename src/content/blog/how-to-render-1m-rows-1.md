@@ -1,7 +1,7 @@
 ---
 title: 渲染100万行数据（上）
 excerpt: 现代浏览器的DOM操作和渲染能力有限。一次性将100万行数据渲染为表格会占用大量内存，导致浏览器卡顿甚至崩溃。为了解决性能问题，现代Web开发中通常采用动态按需渲染（或虚拟化渲染）来处理大数据量表格。
-publishDate: 'Jan 10 2024'
+publishDate: 'Mar 10 2023'
 featureImage:
   src: '/post-8.webp'
   alt: Golden and blue geometrical shapes
