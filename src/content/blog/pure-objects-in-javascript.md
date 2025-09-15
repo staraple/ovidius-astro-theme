@@ -1,7 +1,7 @@
 ---
 title: JavaScript 中的纯对象：Object.create(null) 的用法和优势
 excerpt: 在 JavaScript 中，Object.create(null) 创建了一个*纯对象*——一个不继承自 Object.prototype 的对象。与使用 {} 创建的标准对象不同，纯对象缺少继承的属性或方法（例如 toString、hasOwnProperty）。这种特性使它们在需要可预测、隔离或高性能键值存储的特定场景中非常有价值。
-publishDate: 'Aug 10 2021'
+publishDate: 'June 1 2020'
 featureImage:
   src: '/post-4.webp'
   alt: Blue stripes
