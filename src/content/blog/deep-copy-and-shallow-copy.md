@@ -199,7 +199,36 @@ console.log(copy.self === copy); // true（循环保持）
 console.log(copy !== original); // true（独立拷贝）
 ```
 
-**说明**：这个版本更健壮，适用于生产环境。但对于函数，仍返回原函数（可根据需求调整）。
+### 未处理的数据类型和场景
+
+这个版本更健壮，适用于日常的使用场景。如果实际需求更复杂，可以按需扩展。以下列举了未覆盖的数据类型或场景：
+
+1. **Symbol 键**：
+   - 未处理：`for...in` 忽略 Symbol 键。
+   - 解决方法：使用 `Reflect.ownKeys()` 遍历所有键。
+2. **不可枚举属性**：
+   - 未处理：`for...in` 忽略不可枚举属性。
+   - 解决方法：结合 `Object.getOwnPropertyDescriptors` 复制属性描述符。
+3. **函数及其属性**：
+   - 未处理：函数被直接返回，未复制其附加属性或绑定上下文。
+   - 解决方法：检查 `obj instanceof Function` 并复制其属性。
+4. **getter/setter 和属性描述符**：
+   - 未处理：属性值直接复制，忽略描述符。
+   - 解决方法：使用 `Object.getOwnPropertyDescriptors` 和 `Object.defineProperty`。
+5. **原型链属性**：
+   - 未处理：仅复制自有属性。
+   - 解决方法：显式遍历原型链（`Object.getPrototypeOf`），但需谨慎避免内置原型。
+6. **特殊内置对象**：
+   - 未处理：
+     - `ArrayBuffer` 和 `TypedArray`（如 `Int32Array`）
+     - `WeakMap` 和 `WeakSet`
+     - `Promise`
+     - `Error` 和其子类（如 `TypeError`）
+     - `Proxy` 和 `Reflect`
+     - `Symbol`（注册或非注册）
+     - `DataView`
+     - 其他宿主对象（如 DOM 节点、Canvas 上下文）
+   - 解决方法：为每种类型添加 `instanceof` 检查，特殊处理（如 `new ArrayBuffer`）。
 
 ---
 
