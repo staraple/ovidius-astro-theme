@@ -1,7 +1,7 @@
 ---
 title: JavaScript 中的数据类型和 typeof 陷阱
 excerpt: JavaScript 作为一门动态类型语言，其数据类型系统简单却富有灵活性。然而，这种灵活性也带来了许多陷阱，尤其是 typeof 操作符的使用。typeof 是 JavaScript 中用于检测变量类型的内置操作符，但它并非完美无缺，常导致开发者困惑和错误。
-publishDate: 'July 8 2022'
+publishDate: 'Mar 12 2022'
 featureImage:
   src: '/post-11.webp'
   alt: Atoms

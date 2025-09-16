@@ -1,7 +1,7 @@
 ---
 title: JavaScript 中的浅拷贝与深拷贝
 excerpt: 在 JavaScript 中，对象和数组是引用类型，直接赋值时拷贝的是引用而非值本身，修改拷贝对象会影响原对象。为了解决这个问题，引入了浅拷贝（Shallow Copy）和深拷贝（Deep Copy）的概念。浅拷贝只复制顶层属性，而深拷贝递归复制所有层级。本文将详细解释浅拷贝和深拷贝的定义、适用场景、优缺点及最佳实践。
-publishDate: 'Dec 12 2022'
+publishDate: 'May 12 2022'
 featureImage:
   src: '/post-18.webp'
   alt: Net
