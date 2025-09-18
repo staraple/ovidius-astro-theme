@@ -114,7 +114,7 @@ const siteConfig: SiteConfig = {
         text: 'One update per week. All the latest news directly in your inbox.',
         formUrl: 'https://justgoodthemes.us3.list-manage.com/subscribe/post?u=78f1bab16028354caeb23aecd&amp;id=4a7330d117&amp;f_id=005c48e2f0'
     },
-    postsPerPage: 5
+    postsPerPage: 7
 };
 
 export default siteConfig;
