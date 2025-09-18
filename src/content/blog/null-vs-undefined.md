@@ -1,7 +1,7 @@
 ---
 title: null 与 undefined 的区别
 excerpt: 很多开发者在使用 JavaScript 时，会混淆 null 和 undefined，当要表示“没有值”时就随机用使用一个。今天，我们将深入探讨它们在语法、语义和运行时行为上的不同之处，帮助你彻底厘清这两者的区别。。
-publishDate: 'March 16 2018'
+publishDate: 'March 16 2017'
 featureImage:
   src: '/post-5.webp'
   alt: Stairs
