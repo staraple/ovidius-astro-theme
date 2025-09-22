@@ -118,7 +118,20 @@ console.log(pureObj.toString()); // "自定义字符串表示"
 
 **使用场景**：纯对象在框架或库中非常有用，其中对象需要完全受控的行为，例如自定义数据结构或领域特定模型。
 
-## 6. 与 Map 的比较
+## 6. 使用bind进行柯里化
+
+当我们使用bind来实现柯里化，如果函数并不关心this，可以传入null作为this的绑定对象。然而，使用null来忽略this的绑定对象可能产生一些副作用，如果某个函数确实使用了this，那默认绑定规则会把this绑定到全局对象，从而导致意料之外的结果(比如修改全局对象)。这时如果使用纯对象替换null，不仅让函数更安全，而且更符合语义。
+
+```javascript
+const ø = Object.create(null);
+const foo = function (a, b, c) {
+  console.log(a, b, c);
+};
+const fooCurry = foo.bind(ø, 1, 2);
+fooCurry(3); // 1 2 3
+```
+
+## 7. 与 Map 的比较
 
 虽然纯对象可以作为干净的键值存储，但在复杂使用场景下，ES6 的 Map 提供了更强大的功能。例如，Map 允许使用任意类型的键，而纯对象仅限于字符串键。此外，Map 提供了内置方法，如 size、has 和 forEach，而纯对象需要手动实现这些功能。
 

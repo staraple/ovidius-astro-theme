@@ -3,7 +3,7 @@ import { type CollectionEntry } from 'astro:content';
 import FormattedDate from './FormattedDate.astro';
 
 const { post } = Astro.props as { post: CollectionEntry<'blog'> };
-const { title, publishDate, updatedDate, featureImage, excerpt, isFeatured } = post.data;
+const { title, publishDate, updatedDate, featureImage, excerpt, isFeatured, isDraft } = post.data;
 ---
 
 <article class="post-card mb-12 sm:mb-16">
@@ -29,12 +29,12 @@ const { title, publishDate, updatedDate, featureImage, excerpt, isFeatured } = p
                 )
             }
         </div>
-        <h2 class="text-3xl font-bold text-slate-900"><a href={`/posts/${post.id}/`}>{title}</a></h2>
+        <h2 class="text-3xl font-bold text-slate-900"><a href={`/${isDraft ? 'drafts' : 'posts'}/${post.id}/`}>{title}</a></h2>
     </header>
     {
         featureImage?.src && (
             <figure class="post-card-thumbnail mt-6 mb-6 xl:mb-0">
-                <a href={`/posts/${post.id}/`}>
+                <a href={`/${isDraft ? 'drafts' : 'posts'}/${post.id}/`}>
                     <img class="w-full rounded-md" src={featureImage.src} loading="lazy" decoding="async" alt={featureImage.alt || ''} />
                 </a>
             </figure>

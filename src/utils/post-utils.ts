@@ -5,3 +5,5 @@ export function sortPostsByDateDesc(postA: CollectionEntry<'blog'>, postB: Colle
 }
 
 export const filterOutDrafts = (post: CollectionEntry<'blog'>) => !post.data.isDraft;
+
+export const justDrafts = (post: CollectionEntry<'blog'>) => post.data.isDraft;
