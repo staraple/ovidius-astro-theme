@@ -25,3 +25,8 @@ graph TD
     I -->|有| B
     I -->|无| J[Event Loop 结束]
 ```
+
+- [Event Loop](https://javascript.info/event-loop)
+- [JavaScript execution model](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Execution_model)
+- [Microtask_guide](https://developer.mozilla.org/en-US/docs/Web/API/HTML_DOM_API/Microtask_guide)
+- [WHATWG HTML Living Standard](https://html.spec.whatwg.org/multipage/webappapis.html#event-loops)
